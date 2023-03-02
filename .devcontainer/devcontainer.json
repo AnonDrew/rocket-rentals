@@ -1,0 +1,6 @@
+{
+    "dockerComposeFile": "./docker-compose.yml",
+    "service": "php-apache-environment",
+    "workspaceFolder": "/var/www/html/",
+    "shutdownAction": "stopCompose"
+}
