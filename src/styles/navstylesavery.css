@@ -1,0 +1,38 @@
+* {
+    font-family: sans-serif;
+}
+#nav-wrapper {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#internal-nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.nav-item {
+    background-color: white;
+    text-decoration: none;
+    color: black
+}
+
+#internal-nav-wrapper > .nav-item {
+    display: block;
+    padding: 15px;
+}
+
+.nav-item:hover {
+    background-color: rgb(224, 233, 255);
+}
+
+#logo {
+    justify-self: flex-start;
+    padding-left: 12px;
+    padding-right: 12px;
+}

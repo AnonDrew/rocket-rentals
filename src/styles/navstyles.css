@@ -1,0 +1,40 @@
+* {
+    font-family: sans-serif;
+}
+#nav-wrapper {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.nav-item {
+    background-color: white;
+    text-decoration: none;
+    color: white;
+}
+
+#internal-nav-wrapper {
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+#internal-nav-wrapper > .nav-item {
+    background-color: blue;
+    display: block;
+    padding: 15px;
+}
+
+#internal-nav-wrapper > .nav-item:hover {
+    background-color: green;
+}
+
+#logo {
+    justify-self: flex-start;
+    padding-left: 12px;
+    padding-right: 12px;
+}

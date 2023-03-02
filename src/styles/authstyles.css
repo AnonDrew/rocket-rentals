@@ -1,0 +1,28 @@
+#auth-wrapper {
+    /* background-color: darkred; */
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+#internal-auth-wrapper {
+    padding: 20px 10px;
+    margin: 200px;
+    background-color: orange;
+    border-radius: 5px;
+    border: 1px solid lime;
+}
+
+input {
+    font-size: 20px;
+    margin: 5px;
+}
+
+body {
+    background-color: darkblue;
+    margin: 0;
+}
+
+h2 {
+    font-family: sans-serif;
+}

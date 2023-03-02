@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+    php-apache-environment:
+        build:
+            context: ./Dockerfiles/php
+            dockerfile: Dockerfile
+        depends_on:
+            - db
+        volumes:
+            - ./src/:/var/www/html/
+        ports:
+            - "8000:80"
+    phpmyadmin:
+        image: phpmyadmin
+        ports:
+            - "8080:80"
+        restart: always
+        environment:
+            PMA_HOST: db
+        depends_on:
+            - db
+    db:
+        image: mysql
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: 123
+            MYSQL_DATABASE: asegu51498_webgroup1
+            MYSQL_USER: asegu51498
+            MYSQL_PASSWORD: cause letter involve order
+        ports:
+            - "9906:3306"

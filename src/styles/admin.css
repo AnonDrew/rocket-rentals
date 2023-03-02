@@ -1,0 +1,88 @@
+/* WIPES USER-AGENT STYLESHEET */
+html, body {
+    margin: 0;
+    background-color: white;
+}
+
+/*BEGIN: FROM ONLINE; WIPES BUTTON STYLESHEET*/
+button {
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out,
+    transform 125ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    min-height: 25px;
+    min-width: 120px;
+    padding: 8px 45px;
+
+    background-color: #1879ca;
+    color: white;
+    border-radius: calc(var(--radius) / 2);
+
+    align-self: center;
+}
+button:hover {
+    background: #015fd0;
+}
+button:active {
+    transform: scale(0.99);
+}
+/*END: FROM ONLINE; WIPES BUTTON STYLESHEET*/
+
+#admin-wrapper * {
+    font-family: Noto Sans, sans-serif;
+}
+#admin-wrapper {
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px
+}
+#admin-wrapper-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(179, 200, 255);
+    padding: 25px;
+}
+#title {
+    margin: 0;
+}
+#subtitle {
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+#user-results {
+    background-color: white;
+
+    border: 1px solid rgb(179, 200, 255);
+    border-spacing: 30px 10px;
+}
+.car-info {
+    text-transform: capitalize;
+}
+.overdue-btn {
+    background-color: darkgoldenrod;
+}
+.overdue-btn:hover {
+    background: #916908;
+}
+/*table, th, td {*/
+/*    border: 1px solid red;*/
+/*    border-collapse: collapse;*/
+/*    padding: 10px;*/
+/*}*/
+#footer {
+    display: flex;
+    justify-content: center;
+}

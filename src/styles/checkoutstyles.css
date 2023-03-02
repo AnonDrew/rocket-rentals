@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+}
+
+.cc-mmyy {
+    width: 30px;
+}
+
+.cc-cvc {
+    width: 30px;
+}
+
+td:first-child {
+    text-align: right;
+}
+
+.checkout-options {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    display: inline-block;
+}
+
+.checkout-wrapper {
+    background-color: yellow;
+    justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.internal-checkout-wrapper {
+    display: flex;
+    background: rgb(224,233,255);
+}
+
+.checkout-options-duration {
+    background-color: red;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.checkout-options-duration > label {
+    background-color: rgb(179, 200, 255);
+    border-radius: 10px;
+}
+
+input:checked + label {
+    background: rgb(131, 166, 254);
+}
+
+label:hover {
+    background: rgb(131, 166, 254);
+    cursor: pointer;
+}
+
+input[type='radio'] {
+    -webkit-appearance:none;
+}
+
+.rental-duration {
+    display: flex;
+    flex-direction: row;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-card {
+    background-color: purple;
+}
+
+.checkout-options-cc {
+    background-color: brown;
+}

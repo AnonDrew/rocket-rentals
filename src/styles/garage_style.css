@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(224, 233, 255);
+
+    transition: 0.6s linear;
+}
+
+
+.garage_icon {
+    max-width: 100px;
+    min-width: 100px;
+    max-height: 100px;
+    min-height: 100px;
+
+}
+
+.product-car{
+     box-shadow: rgba(0, 0, 0, 1) 0px 4px 9px;
+    width: 750px;
+    background: rgb(224, 233, 255);
+    padding: 40px;
+    left: 5%;
+    top: 10%;
+display: flex;
+flex-direction: column; 
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.rented_car{
+    /* box-shadow: rgba(0, 0, 0, 1) 0px 4px 9px;
+
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 1) 0px 4px 9px;
+    background: #ecedef;
+    padding: 50px;
+    border: 1px solid chartreuse;
+
+    padding: 40px;
+    left: 5%;
+    top: 10%;
+display: flex;
+flex-direction: column; 
+    margin-left: auto;
+    margin-right: auto; */
+
+     box-shadow: rgba(0, 0, 0, 1) 0px 4px 9px;
+    width: 750px;
+    background: #ecedef;
+    padding: 40px;
+    left: 5%;
+    top: 10%;
+display: flex;
+flex-direction: column; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+.rented_car * {
+    text-transform: capitalize;
+}
+
+.rented_car > h4 {
+    margin-top: var(--filter-spacing);
+    margin-bottom: var(--filter-spacing);
+	  text-align: center;
+}
+.rented_car-info {
+    font-size: 14px;
+  text-align: center;
+
+    padding: 40px;
+    left: 5%;
+    top: 10%;
+display: flex;
+flex-direction: column; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.rented_car-pic {
+     box-shadow: rgba(0, 0, 0, 1) 0px 4px 9px;
+
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 225px;
+    min-height: 225px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#rented_car-info {
+    display: flex;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: auto;
+    grid-row-gap: 2px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+    padding: 40px;
+    left: 5%;
+    top: 10%;
+display: flex;
+flex-direction: column; 
+    margin-left: auto;
+    margin-right: auto; 
+	
+}
+
+
+footer {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+#product-name {
+    padding: 10px;
+    left: 5%;
+    top: 10%;
+display: flex;
+flex-direction: column; 
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+
+#info1 {
+    left: 5%;
+    top: 10%;
+display: flex;
+flex-direction: column; 
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+
+
+
+#info2 {
+    left: 5%;
+    top: 10%;
+display: flex;
+flex-direction: column; 
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+
+
+#info3 {
+    left: 5%;
+    top: 10%;
+display: flex;
+flex-direction: column; 
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+
+#info4 {
+    left: 5%;
+    top: 10%;
+display: flex;
+flex-direction: column; 
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+
+
+
+
+
+
+#garage-results, #garage-results {
+    background-color: white;
+
+    display: flex;
+    gap: var(--catalog-spacing);
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 40px;
+    left: 5%;
+    top: 10%;
+display: flex;
+flex-direction: column; 
+    margin-left: auto;
+    margin-right: auto; 
+
+}
+#no-results {
+    /*display: flex;
+    flex-direction: column;*/
+    flex-basis: 100%;
+  text-align: center;
+
+}
+
+
+* {
+    font-family: sans-serif;
+}
+
+
+
+
+
+#nav-wrapper {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#internal-nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.nav-item {
+    background-color: white;
+    text-decoration: none;
+    color: black
+}
+
+#internal-nav-wrapper > .nav-item {
+    display: block;
+    padding: 15px;
+}
+
+.nav-item:hover {
+    background-color: rgb(224, 233, 255);
+}
+
+.nav-item internal-nav-item:hover {
+    background-color: rgb(224, 233, 255);
+}
+
+#logo {
+    justify-self: flex-start;
+    padding-left: 12px;
+    padding-right: 12px;
+}

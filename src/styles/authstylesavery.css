@@ -1,0 +1,33 @@
+#auth-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+#internal-auth-wrapper {
+    padding: 20px 10px;
+    margin: 200px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+}
+
+input {
+    font-size: 20px;
+    margin: 5px;
+}
+
+body {
+    /* background-color: rgb(224, 233, 255); */
+    background: rgb(224,233,255);
+    background: radial-gradient(circle, rgba(224,233,255,1) 30%, rgba(255,255,255,1) 100%);
+    margin: 0;
+}
+
+h2 {
+    font-family: sans-serif;
+}
+
+input [type="submit"] {
+    cursor: pointer;
+}
