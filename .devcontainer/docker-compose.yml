@@ -7,7 +7,7 @@ services:
         depends_on:
             - db
         volumes:
-            - ./src/:/var/www/html/
+            - ../src/:/var/www/html/
         ports:
             - "8000:80"
     phpmyadmin:
@@ -21,11 +21,12 @@ services:
             - db
     db:
         image: mysql
+        command: --default-authentication-plugin=mysql_native_password
         restart: always
         environment:
             MYSQL_ROOT_PASSWORD: 123
-            MYSQL_DATABASE: asegu51498_webgroup1
-            MYSQL_USER: asegu51498
-            MYSQL_PASSWORD: cause letter involve order
+            MYSQL_DATABASE: rocket_rentals
+            MYSQL_USER: webgroup1
+            MYSQL_PASSWORD: wcc
         ports:
             - "9906:3306"
