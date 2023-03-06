@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+	background-color:rgb(224,233,255);
+	font-family: sans-serif;
+}
+
+.cc-mmyy {
+    width: 30px;
+}
+
+.cc-cvc {
+    width: 30px;
+}
+
+td:first-child {
+    text-align: right;
+}
+
+.checkout-options {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+	border: 1px solid lightgrey;
+}
+
+button {
+    display: inline-block;
+}
+
+.checkout-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 16px;
+    justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px 20px 15px 20px;
+	
+	height: 900px;
+}
+
+.internal-checkout-wrapper {
+    display: flex;
+    background: white;
+}
+
+.checkout-options-duration {
+    background-color: white;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.checkout-options-duration > label {
+    background-color: rgb(179, 200, 255);
+    border-radius: 10px;
+}
+
+input:checked + label {
+    background: darkgrey;
+}
+
+label:hover {
+    background: rgb(131, 166, 254);
+    cursor: pointer;
+}
+
+input[type='radio'] {
+    -webkit-appearance:none;
+}
+
+.rental-duration {
+    display: flex;
+    flex-direction: row;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-card {
+    background-color: white;
+}
+
+.checkout-options-cc {
+    background-color: white;
+	margin:0;
+}
+
+input[type=tel] {
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 12px; 
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.checkout-btn {
+	background-color: black;
+	padding: 12px;
+	margin: 10px 0;
+	border: none;
+	width: 100%;
+	border-radius: 3px;
+	cursor: pointer;
+   font-size: 16px;
+   color:white;
+}
+
+.checkout-btn:hover {
+  background: grey;
+}
+
+h4{
+	font-size: 30px;
+}
