@@ -4,22 +4,6 @@ require_once("db/dbconnect.php");
 
 session_start();
 
-function performCheckout($row){
-    
-    $db->autocommit(FALSE);
-
-    $sql = sprintf("UPDATE users SET is_rented='%s' WHERE cid='%d'", 
-    $db->real_escape_string($_SESSION['username']),$db->real_escape_string($_GET['cid']));
-
-    if ($db->query($sql)){
-        $db->commit();
-        header ("Location: index.php", true);
-    }
-    
-    $db->close();
-
-}
-
 if (isset($_GET['cid'])){
 
     $car_id = $_GET['cid'];
@@ -41,7 +25,7 @@ $naming = "car-card";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/navstylesavery.css">
-    <link rel="stylesheet" href="styles/checkoutstyles.css">
+    <link rel="stylesheet" href="styles/checkoutstylesnico.css">
     <title>Document</title>
 </head>
 <body>
