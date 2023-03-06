@@ -207,7 +207,7 @@ function buildQuery(){
                     </dl>
                     <h4 class="<?=$naming?>-price">
                         $<?=$row['price']?> (per day)
-                        <a class="<?=$naming?>-info-link" href="http://localhost:8000/car.php?cid=<?=$row['cid']?>" style="">&#9432;</a>
+                        <a class="<?=$naming?>-info-link" href="http://localhost:8000/checkout.php?cid=<?=$row['cid']?>" style="">&#9432;</a>
                     </h4>
                     <button class="<?=$naming?>-checkoutbtn" data-cid=<?=$row['cid']?> onclick="onCheckout(event)">checkout</button>
                 </div>
@@ -229,7 +229,7 @@ function buildQuery(){
     </main>
     <?php include_once "footer.php" ?>
     <script>
-        const onCheckout = (ev) => window.location.replace(`http://tophat.sunywcc.edu/~asegu51498/checkout.php?cid=${ev.target.getAttribute("data-cid")}`);
+        const onCheckout = (ev) => window.location.replace(`http://localhost:8000/checkout.php?cid=${ev.target.getAttribute("data-cid")}`);
     </script>
 </body>
 </html>
