@@ -36,7 +36,7 @@ if ( isset($_POST['username']) && isset($_POST['password']) && isset($_POST['pas
                     
                     if ($_POST['password'] == $_POST['password-verify']){
                         $sql = sprintf("
-                        INSERT INTO users (username, user_password)
+                        INSERT INTO users (username, password)
                         VALUES ('%s', '%s');
                         ",
                         $db->real_escape_string($_POST['username']),
