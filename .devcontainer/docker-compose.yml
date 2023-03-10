@@ -27,6 +27,6 @@ services:
             MYSQL_ROOT_PASSWORD: 123
             MYSQL_DATABASE: rocket_rentals
             MYSQL_USER: webgroup1
-            MYSQL_PASSWORD: wcc
+            MYSQL_PASSWORD: 123
         ports:
             - "9906:3306"
