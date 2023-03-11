@@ -1,0 +1,7 @@
+{
+    "name": "rr-php-apache",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "php-apache",
+    "workspaceFolder": "/var/www/html/",
+    "shutdownAction": "stopCompose"
+}
