@@ -1,0 +1,20 @@
+{
+    "name": "rr-node",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "node",
+    "workspaceFolder": "/home/node/app",
+    "shutdownAction": "stopCompose",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "terminal.integrated.profiles.linux": {
+                    "bash": {
+                        "path": "bash",
+                        "icon": "terminal-bash"
+                    }
+                }
+            }
+        }
+    }
+}
