@@ -1,0 +1,44 @@
+version: '3.8'
+services:
+    php-apache:
+        container_name: "rr-php-apache"
+        build:
+            context: ./Dockerfiles/php
+            dockerfile: Dockerfile
+        working_dir: /var/www/html/
+        depends_on:
+            - db
+        volumes:
+            - ./src/:/var/www/html/
+        ports:
+            - "8000:80"
+    node:
+        container_name: "rr-node"
+        image: node
+        user: "node"
+        working_dir: /home/node/app
+        volumes:
+            - ./dev/:/home/node/app/
+        tty: true
+    phpmyadmin:
+        container_name: "rr-db-admin"
+        image: phpmyadmin
+        ports:
+            - "8080:80"
+        restart: always
+        environment:
+            PMA_HOST: db
+        depends_on:
+            - db
+    db:
+        container_name: "rr-db"
+        image: mysql
+        command: --default-authentication-plugin=mysql_native_password
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: 123
+            MYSQL_DATABASE: rocket_rentals
+            MYSQL_USER: webgroup1
+            MYSQL_PASSWORD: 123
+        ports:
+            - "9906:3306"
