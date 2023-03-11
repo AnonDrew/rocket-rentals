@@ -1,2 +1,5 @@
 .idea
-utils
+.vscode
+node_modules
+dist
+config.json
